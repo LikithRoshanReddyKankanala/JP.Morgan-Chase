@@ -41,8 +41,8 @@ class Graph extends Component<IProps, {}> {
       timestamp: 'date',
     };
 
-    if (window.perspective ) {
-      this.table = window.perspective.worker().table(schema);
+    if (window.CSSPerspective ) {
+      this.table = window.CSSPerspective.table(schema);
     }
     if (this.table) {
       console.log('change table');
